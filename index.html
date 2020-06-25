@@ -4,13 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Dashboard</title>
-  </head>
-  <body>
-    <!-- Javascript and CSS links -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css"
     />
+  </head>
+  <body>
+    <!-- page Header -->
+    <header>
+      <h1 class="uk-heading-line uk-text-center">
+        <span>Weather Dashboard</span>
+      </h1>
+    </header>
+    <!-- all of page content in main -->
+    <main>
+      <div class="uk-container uk-container-xlarge">
+        <div class="uk-column-1-2">
+          <h3>Search City:</h3>
+          <!-- search bar -->
+          <div class="uk-margin">
+            <form class="uk-search uk-search-default">
+              <a href="" class="uk-search-icon-flip" uk-search-icon></a>
+              <input
+                class="uk-search-input"
+                type="search"
+                placeholder="Search..."
+              />
+            </form>
+          </div>
+
+          <!-- list of previous searches -->
+          <div id="pSearches">
+            <ul></ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Javascript Link-->
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
